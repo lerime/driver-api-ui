@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-lnkb=_g-gp+xb$n637fk97-l@u1gmf9f$_^r-)1rylk309c3+y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['driver-api-ui.herokuapp.com']
 
 # Application definition
 
