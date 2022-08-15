@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col">
             <div class="card card-body">
-                <form action="" method="get" id="filter_form">
+                <form action="{% url 'drivers' 1 %}" method="get" id="filter_form">
                     <div>
                         <label for="start_date">Minimum Date: </label>
                         <input id="start_date" type="date" name="start_date">

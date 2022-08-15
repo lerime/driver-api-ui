@@ -14,5 +14,8 @@ class DriverView(TemplateView):
         for k, v in self.request.GET.dict().items():
             if v:
                 params[k] = v
+
+        params['limit'] = self.paginate_by
+        params['offset'] = self.paginate_by * (kwargs.get('page', 1) - 1)
         kwargs['drivers'] = driver_service.get_all_records(params=params)
         return kwargs

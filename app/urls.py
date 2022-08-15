@@ -21,5 +21,5 @@ from ui.views import DriverView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", DriverView.as_view(), name='drivers'),
+    path("drivers/<int:page>", DriverView.as_view(), name='drivers'),
 ]
